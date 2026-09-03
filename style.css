@@ -16,13 +16,9 @@ html{
 
 
 body{
-
     background:#f4f6f9;
     color:#333;
-
 }
-
-
 
 
 
@@ -47,12 +43,12 @@ body{
     linear-gradient(
         135deg,
         #0f172a,
-        #2563eb
+        #1d4ed8
     );
 
     color:white;
 
-    padding:40px;
+    padding:50px;
 
 }
 
@@ -66,7 +62,39 @@ body{
 
 
 
-/* Main Title */
+/* LOGO */
+
+
+.logo-box{
+
+    margin-bottom:30px;
+
+}
+
+
+
+.logo-box img{
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:10px;
+
+    border-radius:50%;
+
+}
+
+
+
+
+
+/* TITLE */
+
 
 .hero h1{
 
@@ -82,8 +110,6 @@ body{
 
 
 
-/* Subject */
-
 .hero h2{
 
     font-size:28px;
@@ -92,7 +118,7 @@ body{
 
     color:#dbeafe;
 
-    margin-bottom:35px;
+    margin-bottom:40px;
 
 }
 
@@ -100,16 +126,17 @@ body{
 
 
 
-/* Author Box */
+/* AUTHOR INFORMATION */
 
 
 .author-info{
 
     background:
+
     rgba(255,255,255,0.15);
 
 
-    backdrop-filter:blur(8px);
+    backdrop-filter:blur(10px);
 
 
     padding:35px 70px;
@@ -119,7 +146,8 @@ body{
 
 
     box-shadow:
-    0 10px 30px rgba(0,0,0,0.2);
+
+    0 10px 30px rgba(0,0,0,0.25);
 
 
 }
@@ -132,7 +160,7 @@ body{
 
     line-height:1.8;
 
-    margin:15px 0;
+    margin:18px 0;
 
 }
 
@@ -150,7 +178,7 @@ body{
 
 
 
-/* Button */
+/* BUTTON */
 
 
 .hero button{
@@ -171,7 +199,7 @@ body{
     background:white;
 
 
-    color:#2563eb;
+    color:#1d4ed8;
 
 
     font-size:18px;
@@ -202,6 +230,7 @@ body{
 
 
 
+
 /* =====================
    NAVIGATION
 ===================== */
@@ -209,14 +238,11 @@ body{
 
 nav{
 
-
     position:sticky;
-
 
     top:0;
 
-
-    z-index:100;
+    z-index:10;
 
 
     background:white;
@@ -229,8 +255,8 @@ nav{
 
 
     box-shadow:
-    0 3px 15px rgba(0,0,0,.1);
 
+    0 3px 15px rgba(0,0,0,.1);
 
 }
 
@@ -248,10 +274,7 @@ nav a{
     font-weight:600;
 
 
-    margin:0 18px;
-
-
-    transition:.3s;
+    margin:0 15px;
 
 
 }
@@ -268,8 +291,9 @@ nav a:hover{
 
 
 
+
 /* =====================
-   CONTENT SECTION
+   CONTENT SECTIONS
 ===================== */
 
 
@@ -287,19 +311,17 @@ section{
 
 section h2{
 
-    color:#12355b;
-
     font-size:40px;
+
+    color:#12355b;
 
     margin-bottom:30px;
 
 
-    border-left:
-    6px solid #2563eb;
+    border-left:6px solid #2563eb;
 
 
     padding-left:15px;
-
 
 }
 
@@ -307,14 +329,12 @@ section h2{
 
 section p{
 
-
     font-size:20px;
-
 
     line-height:1.8;
 
-
 }
+
 
 
 
@@ -326,7 +346,6 @@ section p{
 
 
 .card{
-
 
     background:white;
 
@@ -342,34 +361,15 @@ section p{
     0 8px 25px rgba(0,0,0,.08);
 
 
-    transition:.3s;
-
-
-}
-
-
-
-.card:hover{
-
-
-    transform:translateY(-5px);
-
-
 }
 
 
 
 .card h3{
 
-
     color:#2563eb;
 
-
-    font-size:25px;
-
-
     margin-bottom:15px;
-
 
 }
 
@@ -377,23 +377,20 @@ section p{
 
 
 
-/* =====================
-   SERVICES GRID
-===================== */
+/* SERVICE GRID */
 
 
 .grid{
-
 
     display:grid;
 
 
     grid-template-columns:
+
     repeat(3,1fr);
 
 
     gap:25px;
-
 
 }
 
@@ -401,16 +398,13 @@ section p{
 
 
 
-/* =====================
-   BENEFITS
-===================== */
+
+/* BENEFITS */
 
 
 ul{
 
-
     background:white;
-
 
     padding:35px;
 
@@ -429,14 +423,13 @@ ul{
 
 li{
 
-
     font-size:20px;
-
 
     margin:15px;
 
-
 }
+
+
 
 
 
@@ -449,19 +442,15 @@ li{
 
 .process{
 
-
     display:flex;
 
-
     gap:20px;
-
 
 }
 
 
 
 .process div{
-
 
     flex:1;
 
@@ -493,6 +482,7 @@ li{
 
 
 
+
 /* =====================
    FOOTER
 ===================== */
@@ -513,17 +503,15 @@ footer{
     padding:25px;
 
 
-    font-size:16px;
-
-
 }
 
 
 
 
 
+
 /* =====================
-   RESPONSIVE DESIGN
+   MOBILE DESIGN
 ===================== */
 
 
@@ -532,9 +520,10 @@ footer{
 
 .hero h1{
 
-    font-size:42px;
+    font-size:40px;
 
 }
+
 
 
 .hero h2{
@@ -555,9 +544,7 @@ footer{
 
 .grid{
 
-
     grid-template-columns:1fr;
-
 
 }
 
@@ -565,9 +552,7 @@ footer{
 
 .process{
 
-
     display:block;
-
 
 }
 
@@ -575,9 +560,7 @@ footer{
 
 .process div{
 
-
     margin-bottom:20px;
-
 
 }
 
@@ -585,22 +568,9 @@ footer{
 
 nav a{
 
-
     display:block;
 
-
-    margin:12px;
-
-
-}
-
-
-
-section{
-
-
-    padding:50px 25px;
-
+    margin:10px;
 
 }
 
