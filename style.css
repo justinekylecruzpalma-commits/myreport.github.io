@@ -386,3 +386,166 @@ font-size:40px;
 
 
 }
+/* =========================
+   COVER PAGE UPGRADE
+========================= */
+
+
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.cover-decoration{
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    background:rgba(255,255,255,0.08);
+
+    border-radius:50%;
+
+    top:-150px;
+
+    right:-150px;
+
+}
+
+
+
+.cover-decoration::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    background:rgba(255,255,255,0.08);
+
+    border-radius:50%;
+
+    bottom:-400px;
+
+    left:-400px;
+
+}
+
+
+
+.report-label{
+
+    letter-spacing:4px;
+
+    font-size:14px;
+
+    color:#bfdbfe;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:70px;
+
+    font-weight:800;
+
+    text-transform:uppercase;
+
+}
+
+
+
+.hero h2{
+
+    font-size:30px;
+
+    margin-top:20px;
+
+}
+
+
+
+.author-box{
+
+    margin-top:40px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+
+.author-box div{
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(10px);
+
+    padding:25px;
+
+    border-radius:15px;
+
+}
+
+
+
+.author-box span{
+
+    display:block;
+
+    font-size:14px;
+
+    color:#bfdbfe;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.author-box strong{
+
+    display:block;
+
+    font-size:18px;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+.author-box{
+
+grid-template-columns:1fr;
+
+}
+
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+
+}
