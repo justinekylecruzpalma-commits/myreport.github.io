@@ -16,9 +16,12 @@ html{
 
 
 body{
+
     background:#f4f6f9;
     color:#333;
+
 }
+
 
 
 
@@ -43,7 +46,7 @@ body{
     linear-gradient(
         135deg,
         #0f172a,
-        #1d4ed8
+        #2563eb
     );
 
     color:white;
@@ -62,12 +65,9 @@ body{
 
 
 
-/* LOGO */
-
-
 .logo-box{
 
-    margin-bottom:30px;
+    margin-bottom:25px;
 
 }
 
@@ -75,9 +75,9 @@ body{
 
 .logo-box img{
 
-    width:120px;
+    width:130px;
 
-    height:120px;
+    height:130px;
 
     object-fit:contain;
 
@@ -91,18 +91,11 @@ body{
 
 
 
-
-
-/* TITLE */
-
-
 .hero h1{
 
     font-size:65px;
 
     font-weight:700;
-
-    letter-spacing:1px;
 
     margin-bottom:20px;
 
@@ -114,19 +107,14 @@ body{
 
     font-size:28px;
 
-    font-weight:400;
-
     color:#dbeafe;
+
+    font-weight:400;
 
     margin-bottom:40px;
 
 }
 
-
-
-
-
-/* AUTHOR INFORMATION */
 
 
 .author-info{
@@ -147,8 +135,7 @@ body{
 
     box-shadow:
 
-    0 10px 30px rgba(0,0,0,0.25);
-
+    0 10px 30px rgba(0,0,0,.25);
 
 }
 
@@ -160,7 +147,7 @@ body{
 
     line-height:1.8;
 
-    margin:18px 0;
+    margin:15px;
 
 }
 
@@ -170,49 +157,29 @@ body{
 
     color:#bfdbfe;
 
-    font-size:18px;
-
 }
 
 
 
-
-
-/* BUTTON */
-
-
 .hero button{
-
 
     margin-top:40px;
 
-
     padding:15px 45px;
-
 
     border:none;
 
-
     border-radius:30px;
-
 
     background:white;
 
-
-    color:#1d4ed8;
-
+    color:#2563eb;
 
     font-size:18px;
 
-
     font-weight:600;
 
-
     cursor:pointer;
-
-
-    transition:.3s;
-
 
 }
 
@@ -222,10 +189,7 @@ body{
 
     transform:translateY(-5px);
 
-    background:#dbeafe;
-
 }
-
 
 
 
@@ -242,20 +206,15 @@ nav{
 
     top:0;
 
-    z-index:10;
-
+    z-index:100;
 
     background:white;
 
-
     padding:20px;
-
 
     text-align:center;
 
-
     box-shadow:
-
     0 3px 15px rgba(0,0,0,.1);
 
 }
@@ -264,18 +223,13 @@ nav{
 
 nav a{
 
-
     text-decoration:none;
 
-
-    color:#1e3a8a;
-
+    color:#12355b;
 
     font-weight:600;
 
-
     margin:0 15px;
-
 
 }
 
@@ -291,15 +245,14 @@ nav a:hover{
 
 
 
-
 /* =====================
-   CONTENT SECTIONS
+   SECTIONS
 ===================== */
 
 
 section{
 
-    max-width:1100px;
+    max-width:1150px;
 
     margin:auto;
 
@@ -317,9 +270,7 @@ section h2{
 
     margin-bottom:30px;
 
-
     border-left:6px solid #2563eb;
-
 
     padding-left:15px;
 
@@ -329,12 +280,70 @@ section h2{
 
 section p{
 
-    font-size:20px;
+    font-size:19px;
 
     line-height:1.8;
 
+    margin-bottom:20px;
+
 }
 
+
+
+
+
+/* =====================
+   TABLE OF CONTENTS
+===================== */
+
+
+.toc-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+
+
+.toc-grid a{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-decoration:none;
+
+    color:#12355b;
+
+    font-size:21px;
+
+    font-weight:600;
+
+    border-left:6px solid #2563eb;
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.toc-grid a:hover{
+
+    background:#eff6ff;
+
+    transform:translateY(-5px);
+
+}
 
 
 
@@ -345,21 +354,39 @@ section p{
 ===================== */
 
 
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
 .card{
 
     background:white;
 
-
-    padding:35px;
-
+    padding:30px;
 
     border-radius:18px;
-
 
     box-shadow:
 
     0 8px 25px rgba(0,0,0,.08);
 
+    transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-8px);
 
 }
 
@@ -371,26 +398,15 @@ section p{
 
     margin-bottom:15px;
 
+    font-size:24px;
+
 }
 
 
 
+.card p{
 
-
-/* SERVICE GRID */
-
-
-.grid{
-
-    display:grid;
-
-
-    grid-template-columns:
-
-    repeat(3,1fr);
-
-
-    gap:25px;
+    font-size:17px;
 
 }
 
@@ -398,24 +414,22 @@ section p{
 
 
 
-
-/* BENEFITS */
+/* =====================
+   BENEFITS
+===================== */
 
 
 ul{
 
     background:white;
 
-    padding:35px;
-
+    padding:35px 50px;
 
     border-radius:18px;
-
 
     box-shadow:
 
     0 8px 25px rgba(0,0,0,.08);
-
 
 }
 
@@ -433,10 +447,8 @@ li{
 
 
 
-
-
 /* =====================
-   PROCESS FLOW
+   SERVICE PROCESS
 ===================== */
 
 
@@ -444,7 +456,9 @@ li{
 
     display:flex;
 
-    gap:20px;
+    gap:15px;
+
+    flex-wrap:wrap;
 
 }
 
@@ -454,30 +468,23 @@ li{
 
     flex:1;
 
+    min-width:170px;
 
     background:#2563eb;
 
-
     color:white;
 
-
-    padding:40px 20px;
-
+    padding:35px 15px;
 
     border-radius:15px;
 
-
     text-align:center;
 
-
-    font-size:22px;
-
+    font-size:20px;
 
     font-weight:600;
 
-
 }
-
 
 
 
@@ -490,18 +497,13 @@ li{
 
 footer{
 
-
     background:#0f172a;
-
 
     color:white;
 
-
     text-align:center;
 
-
     padding:25px;
-
 
 }
 
@@ -509,9 +511,8 @@ footer{
 
 
 
-
 /* =====================
-   MOBILE DESIGN
+   MOBILE
 ===================== */
 
 
@@ -550,6 +551,14 @@ footer{
 
 
 
+.toc-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
 .process{
 
     display:block;
@@ -560,7 +569,7 @@ footer{
 
 .process div{
 
-    margin-bottom:20px;
+    margin-bottom:15px;
 
 }
 
@@ -575,153 +584,12 @@ nav a{
 }
 
 
-}
-/* =====================
-   TABLE OF CONTENTS
-===================== */
 
+section{
 
-.toc-container{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:20px;
-
-    margin-top:30px;
+    padding:50px 25px;
 
 }
 
-
-
-.toc-item{
-
-    background:white;
-
-    padding:25px;
-
-    border-radius:15px;
-
-    box-shadow:
-    0 8px 20px rgba(0,0,0,0.08);
-
-    border-left:6px solid #2563eb;
-
-    transition:0.3s;
-
-}
-
-
-
-.toc-item:hover{
-
-    transform:translateY(-5px);
-
-    background:#eff6ff;
-
-}
-
-
-
-.toc-item a{
-
-    text-decoration:none;
-
-    color:#12355b;
-
-    font-size:22px;
-
-    font-weight:600;
-
-    display:block;
-
-}
-
-
-
-.toc-item a:hover{
-
-    color:#2563eb;
-
-}
-
-
-
-@media(max-width:900px){
-
-.toc-container{
-
-    grid-template-columns:1fr;
-
-}
-
-}
-/* =====================
-   TOC DESIGN FIX
-===================== */
-
-
-.toc-grid{
-
-    display:grid !important;
-
-    grid-template-columns:repeat(2, 1fr);
-
-    gap:20px;
-
-    margin-top:30px;
-
-}
-
-
-
-.toc-grid a{
-
-    display:block;
-
-    background:white;
-
-    padding:25px;
-
-    border-radius:15px;
-
-    text-decoration:none;
-
-    color:#12355b;
-
-    font-size:22px;
-
-    font-weight:600;
-
-    border-left:6px solid #2563eb;
-
-    box-shadow:0 8px 20px rgba(0,0,0,0.08);
-
-    transition:0.3s;
-
-}
-
-
-
-.toc-grid a:hover{
-
-    background:#eff6ff;
-
-    transform:translateY(-5px);
-
-    color:#2563eb;
-
-}
-
-
-
-@media(max-width:900px){
-
-    .toc-grid{
-
-        grid-template-columns:1fr;
-
-    }
 
 }
