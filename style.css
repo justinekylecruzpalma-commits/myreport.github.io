@@ -459,12 +459,15 @@ font-size:40px;
 
 .hero h1{
 
-    font-size:70px;
+    font-size:60px;
 
     font-weight:800;
 
     text-transform:uppercase;
 
+    letter-spacing:1px;
+
+}
 }
 
 
