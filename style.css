@@ -95,3 +95,51 @@ grid-template-columns:1fr;
 }
 
 }
+.service-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+
+}
+
+
+.service-card{
+
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    text-align:center;
+
+}
+
+
+.service-icon{
+
+    font-size:40px;
+    margin-bottom:20px;
+
+}
+
+
+.toc-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+
+}
+
+
+.toc-grid a{
+
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-decoration:none;
+    color:#12355b;
+    font-weight:600;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
