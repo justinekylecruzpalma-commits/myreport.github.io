@@ -1,6 +1,392 @@
-/* =====================
+/* =========================
+   GLOBAL SETTINGS
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Arial, sans-serif;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+
+
+
+
+/* =========================
+   COVER PAGE
+========================= */
+
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0f172a,
+        #2563eb
+    );
+
+    color:white;
+
+    padding:50px;
+
+}
+
+
+
+.cover-content{
+
+    max-width:900px;
+
+}
+
+
+
+
+.logo-box{
+
+    margin-bottom:25px;
+
+}
+
+
+
+.logo-box img{
+
+    width:130px;
+
+    height:130px;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:10px;
+
+    border-radius:50%;
+
+}
+
+
+
+.hero h1{
+
+    font-size:60px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.hero h2{
+
+    font-size:28px;
+
+    font-weight:400;
+
+    color:#dbeafe;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+.author-info{
+
+    background:
+
+    rgba(255,255,255,0.15);
+
+
+    backdrop-filter:blur(10px);
+
+
+    padding:35px;
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.25);
+
+}
+
+
+
+.author-info p{
+
+    font-size:20px;
+
+    margin:15px;
+
+}
+
+
+
+.author-info strong{
+
+    color:#bfdbfe;
+
+}
+
+
+
+
+
+.hero button{
+
+    margin-top:35px;
+
+    padding:15px 45px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:white;
+
+    color:#2563eb;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.hero button:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+
+
+/* =========================
+   TABLE OF CONTENTS
+========================= */
+
+
+.toc-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+
+
+.toc-grid a{
+
+    display:block;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-decoration:none;
+
+    color:#12355b;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    border-left:6px solid #2563eb;
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.toc-grid a:hover{
+
+    transform:translateY(-5px);
+
+    background:#eff6ff;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   SECTION DESIGN
+========================= */
+
+
+section{
+
+    max-width:1150px;
+
+    margin:auto;
+
+    padding:80px 40px;
+
+}
+
+
+
+section h2{
+
+    font-size:40px;
+
+    color:#12355b;
+
+    margin-bottom:30px;
+
+    border-left:6px solid #2563eb;
+
+    padding-left:15px;
+
+}
+
+
+
+section p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   CARD GRID
+========================= */
+
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:
+
+    0 8px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+
+
+.card h3{
+
+    color:#2563eb;
+
+    font-size:23px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.card p{
+
+    font-size:17px;
+
+}
+
+
+
+
+
+
+
+
+/* =========================
    SERVICE CARDS
-===================== */
+========================= */
 
 
 .service-grid{
@@ -21,11 +407,12 @@
 
     padding:35px;
 
-    border-radius:20px;
-
     text-align:center;
 
+    border-radius:20px;
+
     box-shadow:
+
     0 8px 25px rgba(0,0,0,.08);
 
     transition:.3s;
@@ -48,19 +435,19 @@
 
     height:70px;
 
-    margin:0 auto 20px;
-
     display:flex;
 
     justify-content:center;
 
     align-items:center;
 
-    font-size:35px;
+    margin:0 auto 20px;
 
     background:#dbeafe;
 
     border-radius:50%;
+
+    font-size:35px;
 
 }
 
@@ -76,70 +463,174 @@
 
 
 
-.service-card p{
 
-    font-size:17px;
 
-    line-height:1.6;
+
+/* =========================
+   BENEFITS
+========================= */
+
+
+ul{
+
+    background:white;
+
+    padding:35px 50px;
+
+    border-radius:20px;
+
+    box-shadow:
+
+    0 8px 25px rgba(0,0,0,.08);
 
 }
 
+
+
+li{
+
+    font-size:20px;
+
+    margin:15px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   PROCESS FLOW
+========================= */
+
+
+.process{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.process div{
+
+    flex:1;
+
+    min-width:160px;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:35px 15px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+
+footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   MOBILE DESIGN
+========================= */
 
 
 @media(max-width:900px){
 
-.service-grid{
 
-grid-template-columns:1fr;
-
-}
-
-}
-.service-grid{
-
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-
-}
-
-
-.service-card{
-
-    background:white;
-    padding:30px;
-    border-radius:18px;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-    text-align:center;
-
-}
-
-
-.service-icon{
+.hero h1{
 
     font-size:40px;
-    margin-bottom:20px;
+
+}
+
+
+.hero h2{
+
+    font-size:22px;
+
+}
+
+
+.grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.service-grid{
+
+    grid-template-columns:1fr;
 
 }
 
 
 .toc-grid{
 
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
+    grid-template-columns:1fr;
 
 }
 
 
-.toc-grid a{
+.process{
 
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    text-decoration:none;
-    color:#12355b;
-    font-weight:600;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    display:block;
+
+}
+
+
+.process div{
+
+    margin-bottom:15px;
+
+}
+
+
+section{
+
+    padding:50px 25px;
+
+}
+
 
 }
