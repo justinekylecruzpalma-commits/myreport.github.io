@@ -129,16 +129,36 @@ margin:15px;
 
 .hero button{
 
-margin-top:30px;
+    margin-top:35px;
 
-padding:15px 40px;
+    padding:16px 45px;
 
-border:none;
+    border:none;
 
-border-radius:30px;
+    border-radius:30px;
 
-cursor:pointer;
+    background:#ffffff;
 
+    color:#1e40af;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.hero button:hover{
+
+    background:#dbeafe;
+
+    transform:translateY(-5px);
+
+}
 }
 
 
