@@ -799,3 +799,67 @@ section{
 
 
 }
+/* =========================
+   PRODUCT OVERVIEW UPGRADE
+========================= */
+
+
+.product-card{
+
+    text-align:center;
+
+}
+
+
+
+.product-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#dbeafe;
+
+    border-radius:50%;
+
+    font-size:40px;
+
+}
+
+
+
+.product-card h3{
+
+    color:#12355b;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.product-card p{
+
+    color:#64748b;
+
+    line-height:1.8;
+
+}
+
+
+
+.product-card:hover .product-icon{
+
+    transform:scale(1.1);
+
+    transition:.3s;
+
+}
