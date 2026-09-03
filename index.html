@@ -1,39 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Product Services Report</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Product Services Report</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
+
 <header>
-    <h1>Product Services Report</h1>
-    <p>Academic Web Report</p>
+
+<div class="hero">
+
+<h1>Product Services Report</h1>
+
+<p>
+A Professional Web-Based Academic Report
+</p>
+
+
+<button onclick="scrollReport()">
+View Report
+</button>
+
+
+</div>
+
 </header>
 
 
+
+
 <nav>
-    <button onclick="showSection('intro')">Introduction</button>
-    <button onclick="showSection('product')">Product Overview</button>
-    <button onclick="showSection('services')">Services</button>
-    <button onclick="showSection('benefits')">Benefits</button>
-    <button onclick="showSection('conclusion')">Conclusion</button>
+
+<a href="#intro">Introduction</a>
+<a href="#product">Product</a>
+<a href="#services">Services</a>
+<a href="#benefits">Benefits</a>
+<a href="#process">Process</a>
+<a href="#conclusion">Conclusion</a>
+
 </nav>
 
 
 
-<main>
 
 
-<section id="intro" class="content active">
+<section id="intro">
 
 <h2>Introduction</h2>
 
 <p>
-Product services refer to the activities and solutions provided by an organization
-to support customers before, during, and after purchasing a product. These services
-help improve customer satisfaction, product value, and long-term relationships.
+Product services refer to the different solutions and support activities
+provided by organizations to improve customer experience and product value.
+This report presents an overview of products, services, and their importance
+in business operations.
 </p>
 
 </section>
@@ -41,24 +70,27 @@ help improve customer satisfaction, product value, and long-term relationships.
 
 
 
-<section id="product" class="content">
+
+
+<section id="product">
+
 
 <h2>Product Overview</h2>
 
+
+<div class="card">
+
+
+<h3>Product Description</h3>
+
+
 <p>
-The product represents the main offering provided to customers. It is designed
-to address customer needs through quality, functionality, and reliability.
+This section provides a general description of the product, including
+its purpose, features, and role in addressing customer needs.
 </p>
 
 
-<ul>
-
-<li>High-quality product features</li>
-<li>Customer-focused design</li>
-<li>Reliable performance</li>
-<li>Competitive value</li>
-
-</ul>
+</div>
 
 
 </section>
@@ -66,43 +98,55 @@ to address customer needs through quality, functionality, and reliability.
 
 
 
-<section id="services" class="content">
+
+
+
+<section id="services">
+
 
 <h2>Product Services</h2>
 
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>Customer Support</h3>
+
 <p>
-Organizations provide different services to ensure customers receive maximum
-benefits from their products.
+Providing assistance and solutions to customer concerns.
 </p>
 
-
-<table>
-
-<tr>
-<th>Service</th>
-<th>Description</th>
-</tr>
+</div>
 
 
-<tr>
-<td>Installation Support</td>
-<td>Assistance in setting up and preparing the product.</td>
-</tr>
+
+<div class="card">
+
+<h3>Maintenance</h3>
+
+<p>
+Ensuring continuous product performance and reliability.
+</p>
+
+</div>
 
 
-<tr>
-<td>Maintenance</td>
-<td>Regular checking and improvement to maintain performance.</td>
-</tr>
 
 
-<tr>
-<td>Customer Support</td>
-<td>Providing solutions to customer concerns and inquiries.</td>
-</tr>
+<div class="card">
+
+<h3>Technical Assistance</h3>
+
+<p>
+Supporting customers through professional guidance.
+</p>
+
+</div>
 
 
-</table>
+</div>
 
 
 </section>
@@ -110,7 +154,11 @@ benefits from their products.
 
 
 
-<section id="benefits" class="content">
+
+
+
+<section id="benefits">
+
 
 <h2>Benefits of Product Services</h2>
 
@@ -118,9 +166,13 @@ benefits from their products.
 <ul>
 
 <li>Improves customer satisfaction</li>
+
+<li>Enhances product value</li>
+
 <li>Creates stronger customer relationships</li>
-<li>Extends product lifespan</li>
-<li>Provides better customer experience</li>
+
+<li>Supports long-term business growth</li>
+
 
 </ul>
 
@@ -130,42 +182,93 @@ benefits from their products.
 
 
 
-<section id="conclusion" class="content">
+
+
+
+<section id="process">
+
+
+<h2>Service Process</h2>
+
+
+<div class="process">
+
+
+<div>
+01
+<br>
+Customer Need
+</div>
+
+
+<div>
+02
+<br>
+Service Solution
+</div>
+
+
+<div>
+03
+<br>
+Implementation
+</div>
+
+
+<div>
+04
+<br>
+Customer Support
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="conclusion">
+
 
 <h2>Conclusion</h2>
 
-<p>
-Effective product services contribute significantly to business success.
-By providing quality support and customer-centered solutions, organizations
-can improve customer loyalty and maintain competitive advantage.
-</p>
-
-
-<h2>References</h2>
 
 <p>
-Author, A. (Year). Title of reference material.
-<br>
-Author, B. (Year). Title of reference material.
+
+Product services play an important role in ensuring customer satisfaction
+and maintaining business competitiveness. Effective service management
+helps organizations provide better solutions and create lasting value.
+
 </p>
 
 
 </section>
 
 
-</main>
 
 
 <footer>
 
+
 <p>
-Product Services Report | Master School Project
+Product Services Report | Academic Project
 </p>
+
 
 </footer>
 
 
+
+
 <script src="script.js"></script>
 
+
 </body>
+
 </html>
