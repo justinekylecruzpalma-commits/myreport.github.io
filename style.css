@@ -1210,3 +1210,50 @@ transform:rotate(90deg);
     object-fit:contain;
     display:block;
 }
+/* PRODUCT GRAPHICS */
+
+.product-image.graphic{
+
+height:180px;
+
+background:
+linear-gradient(
+135deg,
+#eaf4ff,
+#ffffff
+);
+
+border-radius:20px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border:1px solid #dbe6f3;
+
+}
+
+
+.product-image.graphic span{
+
+font-size:80px;
+
+filter:drop-shadow(
+0 10px 10px rgba(0,0,0,.15)
+);
+
+transition:.4s;
+
+}
+
+
+
+.product-card:hover 
+.product-image.graphic span{
+
+transform:scale(1.2)
+rotate(5deg);
+
+}
