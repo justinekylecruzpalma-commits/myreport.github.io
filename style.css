@@ -1257,3 +1257,83 @@ transform:scale(1.2)
 rotate(5deg);
 
 }
+/* ==========================
+   SERVICE CARD STYLE
+========================== */
+
+
+.service-card{
+
+    min-height:420px;
+
+    padding:35px 28px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+}
+
+
+
+.service-icon{
+
+
+    font-size:65px;
+
+    height:110px;
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+.service-card h3{
+
+
+    font-size:26px;
+
+    line-height:1.4;
+
+    color:#06162c;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.service-card p{
+
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#334155;
+
+
+}
+
+
+
+/* Hover effect */
+
+.service-card:hover .service-icon{
+
+
+    transform:scale(1.15);
+
+    transition:.3s;
+
+
+}
